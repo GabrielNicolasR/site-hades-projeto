@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/images/hades-favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/resposive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Schoolbell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>Landing Page Hades</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="img-icone" src="src/images/icone_logo_hades-removebg-preview.png" alt="Icone logo Hades">
+            <hr>
+            <img class="img-logo" src="src/images/Hades_logo.png" alt="Hades Logo">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a class="home-menu" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="comprar-menu" href="#comprar">Comprar</a>
+                </li>
+                <li class="suporte-menu">
+                    <a class="suporte" href="https://www.supergiantgames.com/contact/" target="_blank">Suporte</a>
+                    <img src="src/images/icone-link.svg" alt="Icone de Link Navegador">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home" class="home">  
+        <picture>
+            <source srcset="src/images/bg-main.png" media="(min-width:645px)">
+            <source srcset="src/images/bg-main-cell.jpg" media="(min-width: 370px)">    
+            <img class="imagem-fundo" src="src/images/bg-main.png" alt="Hades fundo">
+        </picture>
+        <div class="informacoes">
+            <div class="lista-de-jogos">
+                <div>
+                    <img src="src/images/hades-demonstracao-logo.png" alt="Logo Hades">
+                    <img src="src/images/Hades-II-Logo.png" alt="Hades 2 Logo">
+               </div>
+                <div class="info-principal">
+                    <h1 class="titulo">
+                        Hades já disponível para Playstation 5, Xbox Series X/S e PC
+                    </h1>
+                    <h2 class="sub-titulo">
+                        Hades II estará disponível em breve!
+                    </h2>
+                </div>
+                <p class="texto"> 
+                    Domine os deuses e escape do inferno. &nbsp A morte é apenas o começo da sua jornada!
+                </p>
+                <div class="btns">
+                    <a class="btn-comprar" href="#comprar">Compre Já</a>
+                    <a class="btn-comprar-em-breve" href="https://www.supergiantgames.com/games/hades-ii/" target="_blank">Em Breve!</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="comprar" class="compre-ja">
+        <h2 class="titulo">Compre Já</h2>
+        <div class="cartao">
+            <img class="capa-do-jogo" src="src/images/hades-capa.jpg" alt="Capa do Jogo Hades">
+
+            <div class="informacoes">
+                <h3>Hades</h3>
+                <p>
+                    Inclui o <strong>jogo Hades</strong> e <strong>todas suas DLC's e SoundTracks</strong>
+                </p>
+                <ul class="plataformas">
+                    <li>
+                        <img src="src/images/logo-ps5.svg" alt="Logo Playstation 5">
+                    </li>
+                    <li>
+                        <img src="src/images/logo-xbox-series-s.svg" alt="Logo Xbox Series X|S">
+                    </li>
+                    <li>
+                        <img src="src/images/logo-ps4.svg" alt="Logo Playstation 4">
+                    </li>
+                    <li>
+                        <img src="src/images/logo-xbox-one.svg" alt="Logo Xbox One">
+                    </li>
+                    <li>
+                        <img src="src/images/logo-pc.svg" alt="Logo PC">
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-plataforma">
+                <p><strong>Selecione a plataforma</strong></p>
+                <ul>
+                    <ul class="plataformas">
+                        <li>
+                            <img src="src/images/logo-ps5.svg" alt="Logo Playstation 5">
+                        </li>
+                        <li>
+                            <img src="src/images/logo-xbox-series-s.svg" alt="Logo Xbox Series X|S">
+                        </li>
+                        <li>
+                            <img src="src/images/logo-ps4.svg" alt="Logo Playstation 4">
+                        </li>
+                        <li>
+                            <img src="src/images/logo-xbox-one.svg" alt="Logo Xbox One">
+                        </li>
+                        <li>
+                            <img src="src/images/logo-pc.svg" alt="Logo PC">
+                        </li>
+                    </ul>
+                </ul>
+
+            </button>
+        </div>
+    </section>
+
+    <section id="compre-ja" class="compre-ja em-breve">
+        <h2 class="titulo">EM BREVE!</h2>
+        <div class="cartao">
+            <img class="capa-do-jogo" src="src/images/hades-II-capa.png" alt="Capa do Jogo Hades">
+
+            <div class="informacoes">
+                <h3>Hades II</h3>
+                <p>
+                    O jogo <strong>Hades II</strong> estará disponível
+                    em breve em <strong>todas as plataformas abaixo</strong>
+                </p>
+                <ul class="plataformas">
+                    <li>
+                        <img src="src/images/logo-ps5.svg" alt="Logo Playstation 5">
+                    </li>
+                    <li>
+                        <img src="src/images/logo-xbox-series-s.svg" alt="Logo Xbox Series X|S">
+                    </li>
+                    <li>
+                        <img src="src/images/logo-ps4.svg" alt="Logo Playstation 4">
+                    </li>
+                    <li>
+                        <img src="src/images/logo-xbox-one.svg" alt="Logo Xbox One">
+                    </li>
+                    <li>
+                        <img src="src/images/logo-pc.svg" alt="Logo PC">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

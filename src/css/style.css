@@ -1,0 +1,258 @@
+body{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    background-color: #420002;
+    color: #fff;
+}
+
+.header {
+    height: 80px;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+}
+
+.header .logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header .logo .img-icone {
+    width: 50px;
+}
+
+.header .logo .img-logo {
+    width: 130px;
+}
+
+.header hr {
+    height: 50px;
+    border-color: #420002;
+}
+
+.header .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.header .menu .home-menu:hover, .comprar-menu:hover, .suporte-menu:hover {
+    color: #7a1c1f;
+    transition: color 0.5s;
+}
+
+.home {
+    display: flex;
+    position: relative;
+}
+
+.home .imagem-fundo {
+   height: 100%;
+   width: 100%;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7) 55%, transparent 65%);
+}
+
+.home .informacoes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    min-height: calc(100vh - 80px);
+    padding: 80px 80px 80px 170px;
+    z-index: 1;
+}
+
+.home .informacoes .lista-de-jogos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.home .informacoes img{ 
+    max-width: 200px;
+}
+
+.home .informacoes .btns {
+    display: flex;
+    gap: 50px;
+}
+
+.btn-comprar, .btn-plataforma{
+    letter-spacing: 1px;
+    background-color: rgba(180, 16, 16, 0.522);
+    border: 0.5px solid #000;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+}
+
+.btn-plataforma {
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    border: 0.5px solid #ffffff71;
+}
+
+.home .informacoes .btns .btn-comprar-em-breve {
+    letter-spacing: 1px;
+    background-color: rgb(113, 220, 144, 0.522);
+    border: 0.5px solid #000;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+}
+
+.home .informacoes .btns .btn-comprar:hover{
+    color: #fff;
+    background-color: rgba(189, 189, 189, 0.311);
+}
+
+.home .informacoes .btns .btn-comprar-em-breve:hover{
+    color: #fff;
+    background-color: rgba(189, 189, 189, 0.311);
+}
+
+.home .informacoes .texto {
+    font-family: 'PT Sans';
+    font-size: 16px;
+}
+
+.compre-ja .capa-do-jogo {
+    width: 270px;
+    border: solid 5px rgba(106, 192, 130, 0.421);
+}
+
+.compre-ja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+    border-bottom: 2px solid #000000;
+}
+
+.compre-ja.em-breve {
+    background-color: rgba(106, 192, 130, 0.647);
+    border-bottom: none;
+}
+
+.compre-ja .titulo {
+    font-family: 'Eb Garamond';
+    font-size: 50px;
+    font-weight: 700;
+     margin-bottom: 50px;
+}
+
+.compre-ja .cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.compre-ja .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.compre-ja .informacoes h3 {
+    font-family: 'PT Sans';
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.compre-ja .informacoes p {
+    color: #8e8e8e;
+    font-family: 'EP Sans';
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.compre-ja .informacoes .plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.compre-ja .btn-plataforma .plataformas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+    opacity: 0;
+}
+
+.compre-ja .btn-plataforma .plataformas.ativo {
+    display: flex;
+    opacity: 1;
+}
+
+.compre-ja .btn-plataforma p {
+    font-size: 18px;
+}
+
+.compre-ja .btn-plataforma .plataformas li {
+    padding: 20px;
+}
+
+.compre-ja  .btn-plataforma .plataformas li:nth-child(1){
+    border: 1px solid #00439c;
+ }
+ 
+ .compre-ja  .btn-plataforma .plataformas li:nth-child(1):hover{
+    background-color: #00439c;
+ }
+ .compre-ja  .btn-plataforma .plataformas li:nth-child(2){
+    border: 1px solid #387a26;
+ }
+ 
+ .compre-ja  .btn-plataforma .plataformas li:nth-child(2):hover{
+    background-color: #387a26;
+ }
+ 
+ .compre-ja .btn-plataforma .plataformas li:nth-child(3) {
+    border: 1px solid #00439c;
+ }
+ 
+ .compre-ja .btn-plataforma .plataformas li:nth-child(3):hover {
+    background-color: #00439c;
+ }
+ 
+ .compre-ja .btn-plataforma .plataformas li:nth-child(4) {
+    border: 1px solid #387a26; 
+ }
+ 
+ .compre-ja .btn-plataforma .plataformas li:nth-child(4):hover {
+    background-color: #387a26;
+ }
+ .compre-ja .btn-plataforma .plataformas li:nth-child(5) {
+    border: 1px solid #fcaf17; 
+ }
+ 
+ .compre-ja .btn-plataforma .plataformas li:nth-child(5):hover {
+    background-color: #fcaf17;
+ }

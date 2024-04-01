@@ -1,0 +1,122 @@
+@media (max-width: 1024px) {
+    .header {
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+
+    .header .menu li a {
+        padding: 10px;
+    }
+
+    .header hr {
+        height: 35px;
+    }
+
+    .header .logo .img-logo {
+        width: 120px;
+    }
+
+    .header .logo .img-icone {
+        width: 35px;
+    }
+
+
+    .home .informacoes {
+       padding: 30px 200px 0px 30px;
+    }
+
+    .home .informacoes .lista-de-jogos {
+        margin-bottom: 250px;
+        gap: 20px;
+    }
+
+    .home .informacoes img {
+        max-width: 150px;
+    }
+
+    .home .informacoes .titulo {
+        text-shadow: -1 -1 0 #000;
+        font-size: 20px;
+    }
+
+    .home .informacoes .sub-titulo {
+        font-size: 20px;
+    }
+
+    .compre-ja .cartao {
+        width: 70%;
+    }
+
+    .compre-ja .informacoes .plataformas {
+        gap: 25px;
+    }
+
+}
+
+@media (max-width: 768px) {     
+    .home::after {
+        background: linear-gradient(90deg,  rgba(0, 0, 0, .7), rgba(0, 0, 0, .7) 100%, transparent 75%);
+    }
+
+    .home .informacoes img{ 
+        max-width: 150px;
+    }
+
+    .compre-ja {
+        padding: 30px;
+    }
+
+    .compre-ja .titulo {
+        font-size: 35px;
+    }
+
+    .compre-ja.em-breve .titulo {
+        font-size: 35px;
+    }
+
+    .compre-ja .cartao {
+        padding: 80px 20px;
+        width: 100%;
+    }
+
+    .compre-ja .informacoes .plataformas {
+        flex-direction: column;
+    }
+
+    .compre-ja .informacoes h3 {
+        font-size: 35px;
+    }
+
+    .compre-ja.em-breve .informacoes h3 {
+        font-size: 35px;
+    }
+
+    .btn-plataforma {
+        margin-top: 15px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 645px) {
+
+    .home .informacoes {
+        padding: 200px 10px;
+    }
+
+    .home .informacoes img{ 
+        max-width: 150px;
+    }
+
+    .home .informacoes .lista-de-jogos {
+        gap: 50px;
+    }
+
+    .home .informacoes .btns {
+        justify-content: center;
+    }
+
+    .home::after {
+        background: linear-gradient(90deg,  rgba(0, 0, 0, .7), rgba(0, 0, 0, .7) 35%, transparent 120%);
+    }
+}
